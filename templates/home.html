@@ -1,0 +1,82 @@
+{% extends "layout.html" %}
+
+{% load static %}
+
+{%block body %}
+
+<div class="container mt-5">
+    <h2>Introduction</h2>
+    <p >
+      I'm <strong>Kabid Yeiad</strong>
+    </p> 
+    <div >
+        <img src="{% static 'images/Yeiad (1).jpg' %}" class="rounded" alt="Loading..." width="300" height="300">
+    </div>
+</div>
+<div class="container">
+    <div class="container mt-50">
+        <h2  ">Work Experience</h2>
+    </div>
+    <div class="row, ">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Wreck IT</h5>
+              <p class="card-text">April 2021 - August 2021</p>
+              <a href="{% url 'contact' %}" class="btn btn-primary">Contact Me</a>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Freelancing</h5>
+                <p class="card-text">February 2021 - August 2021</p>
+                <a href="{% url 'contact' %}" class="btn btn-primary">Contact Me</a>
+              </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+
+<div class="container mt-4">
+    <div class="card">
+      <div class="card-header ">
+        <h3>Skill & Accomplishments</h3>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col">
+            <strong> Skills </strong>
+            <div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Python Language</li>
+                <li class="list-group-item">Video Edit</li>
+              </ul>
+            </div>
+          </div>
+  
+          <div class="col">
+            <strong> Accomplishments </strong>
+            <div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Yet to Come</li>
+                <li class="list-group-item">Solo Projects </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+
+
+{% endblock %}
